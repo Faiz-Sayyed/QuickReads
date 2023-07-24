@@ -1,0 +1,149 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    background-color: aqua;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-left {
+    margin-left: 5vw;
+    font-size: 1.5rem;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.2rem;
+    width: 25%;
+
+    margin-right: 5vw;
+}
+
+.navbar-right-logged-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50%;
+}
+
+.navbar-right-logged-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-radius: 10rem;
+    border: 1px solid black;
+}
+
+.username:hover {
+    cursor: default;
+}
+
+.logout-button {
+    font-size: 1.2rem;
+    font-weight: normal;
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    border: none;
+    background-color: aqua;
+}
+
+.navbar-left:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.register-button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.github-button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-right-logged-out {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .navbar-right {
+        width: 30%;
+    }
+
+    .username {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-left {
+        font-size: 1.2rem;
+    }
+
+    .navbar-right,
+    .logout-button {
+        font-size: 1rem;
+    }
+
+    .navbar-right {
+        margin-right: 3vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar-right {
+        width: 40%;
+    }
+
+    .navbar-right,
+    .logout-button {
+        font-size: 0.9rem;
+    }
+}
