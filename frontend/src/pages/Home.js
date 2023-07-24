@@ -18,7 +18,7 @@ function Home() {
         setError('');
         if (user) {
             const token = user.data.token;
-            axios.get('http://localhost:5000/api/v1/articles', {
+            axios.get('https://quickreads.onrender.com/api/v1/articles', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -53,7 +53,7 @@ function Home() {
         setLoading(true)
         if (user) {
             const token = user.data.token;
-            axios.post('http://localhost:5000/api/v1/summary', {
+            axios.post('https://quickreads.onrender.com/api/v1/summary', {
                 link: link,
             }, {
                 headers: {

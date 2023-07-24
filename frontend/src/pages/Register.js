@@ -15,7 +15,7 @@ const Register = ({ user, setUser }) => {
         e.preventDefault();
         setError('');
         setLoading(true);
-        axios.post('http://localhost:5000/api/v1/auth/register', {
+        axios.post('https://quickreads.onrender.com/v1/auth/register', {
             email,
             password
         })
