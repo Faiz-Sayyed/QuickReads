@@ -21,6 +21,10 @@ App.use(cors(corsOptions));
 
 App.use(express.json());
 
+App.get("/", (req, res) => {
+    res.send({ message: "Hello World!" });
+});
+
 App.use('/api/v1/auth', auth);
 App.use('/api/v1/articles', requireAuth, articles);
 App.use('/api/v1/summary', requireAuth, summary);
